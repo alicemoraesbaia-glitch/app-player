@@ -17,19 +17,19 @@ const songs = [
     title: "Música 1",
     artist: "Artista 1",
     src: "musica1.mp3",
-    cover: "capa1.jpg",
+    cover: "img/capa1.png",
   },
   {
     title: "Música 2",
     artist: "Artista 2",
     src: "musica2.mp3",
-    cover: "capa2.jpg",
+    cover: "img/capa2.png",
   },
   {
     title: "Música 3",
     artist: "Artista 3",
     src: "musica3.mp3",
-    cover: "capa3.jpg",
+    cover: "img/capa3.png",
   },
 ];
 
