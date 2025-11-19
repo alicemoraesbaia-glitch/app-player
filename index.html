@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player Moderno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <div class="album-art">
+      <img src="capa1.jpg" alt="Capa da música" id="cover">
+      <div class="wave" id="wave"></div>
+    </div>
+    <h2 id="title">Título da Música</h2>
+    <h3 id="artist">Artista</h3>
+
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+    <div class="time">
+      <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <div class="playlist" id="playlist-container">
+      <ul id="playlist"></ul>
+    </div>
+
+    <div class="theme-toggle">
+      <button id="theme-btn">🌙</button>
+    </div>
+
+    <audio id="audio"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

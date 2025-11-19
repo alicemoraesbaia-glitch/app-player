@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+}
+
+.player {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.album-art img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.5s linear;
+}
+
+.album-art img.playing {
+  transform: rotate(360deg);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.progress-container {
+  background: rgba(255, 255, 255, 0.2);
+  height: 6px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress {
+  background: #1db954;
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+}
+
+.time {
+  font-size: 0.9rem;
+}
+
+.playlist {
+  margin-top: 15px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist li {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.playlist li:hover,
+.playlist li.active {
+  background: rgba(255, 255, 255, 0.2);
+}
